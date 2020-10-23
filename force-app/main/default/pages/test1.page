@@ -1,0 +1,19 @@
+<apex:page standardController="Account" extensions="redirect">
+<apex:form >
+
+<apex:pageBlock title="Accounts view as Srikanth">
+
+
+<apex:commandButton value="Next" action="{!pageAccount}" />
+<apex:pageBlockSection title="List of Accounts">
+
+<apex:pageBlockTable value="{!Account}" var="a">
+<apex:column value="{!a.Name}"/>
+<apex:column value="{!a.Phone}"/>
+<apex:column value="{!a.Owner.Email}"/>
+<apex:column value="{!a.Fax}"/>
+</apex:pageBlockTable>
+</apex:pageBlockSection>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

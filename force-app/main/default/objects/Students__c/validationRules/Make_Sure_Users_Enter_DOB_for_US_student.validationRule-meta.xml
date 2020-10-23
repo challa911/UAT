@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Make_Sure_Users_Enter_DOB_for_US_student</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISBLANK(Date_of_Birth__c)   &amp;&amp;  ISPICKVAL(Country__c,&apos;US&apos;)</errorConditionFormula>
+    <errorDisplayField>Date_of_Birth__c</errorDisplayField>
+    <errorMessage>Please Enter the DOB</errorMessage>
+</ValidationRule>

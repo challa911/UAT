@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>test</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>test</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>/a141J000003i4yW/e?retURL=%2Fa141J000003i4yW&amp;_CONFIRMATIONTOKEN=VmpFPSxNakF4Tnkwd05pMHhObFF3TXpvMU5EbzBPQzR3TVRGYSx2aklCYzBvM3VhdHVVR2VvaGxGaUxJLFltTXlOek15&amp;common.udd.actions.ActionsUtilORIG_URI=%2Fa141J000003i4yW%2Fe&amp;00N1J00000EVJJa=&apos;in progress&apos;</url>
+</WebLink>

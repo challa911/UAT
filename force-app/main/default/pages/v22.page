@@ -1,0 +1,24 @@
+<apex:page standardController="Account" extensions="MassAssociateController" showHeader="true">
+<apex:sectionHeader title="Mass Equipment Association"/>
+  <apex:PageBlock title=" {!Account.Name} " >     
+          <apex:form >
+          <div align="center" draggable="false"> 
+              <apex:commandbutton style="float:centre" value="Save" action="{!save}"/>
+              <apex:commandbutton style="float:centre" value="Cancel" action="{!cancel}"/>                                         
+          </div>    
+          </apex:form>
+  </apex:PageBlock>
+  <apex:form >
+  <apex:pageBlock >      
+      <apex:pageBlockTable value="{!equip}" var="Equipment">
+          <apex:column >
+          <apex:inputCheckBox value="{!Equipment.check__c}"/>
+          </apex:column>
+          <apex:column value="{!Equipment.Name}"/>
+          <apex:column value="{!Equipment.Email}"/>
+         
+      </apex:pageBlockTable>
+      
+  </apex:pageBlock>
+  </apex:form>
+</apex:page>

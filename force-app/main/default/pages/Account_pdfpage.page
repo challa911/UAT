@@ -1,0 +1,45 @@
+<apex:page standardController="Account" extensions="Customerreport" >
+ <style>
+   
+.pbSubheader{
+background-color: darkgreen !important;
+border-color: none !important;
+}
+ #headertable table td, h2 {
+            color: #909090  ;
+        }
+ 
+  </style>
+<apex:pageBlock id="Accpage">
+<apex:form >
+<center>
+<apex:commandButton action="{!generatePdfpage}" value="Generate PDF"/>
+</center>
+</apex:form>
+<br>
+</br>
+  <apex:pageBlocksection collapsible="false" title="Account Information" columns="1"  >
+  
+  <apex:pageBlockSectionItem >
+  <apex:outputLabel value="Customer Id" >
+  </apex:outputLabel>
+  <apex:outputField value="{!Accountrecords.SAP_Customer_ID__c}"/>
+  </apex:pageBlockSectionItem>
+  
+  <apex:pageBlocksectionItem >
+  <apex:outputLabel value="Customer Name" >
+  </apex:outputLabel>
+  <apex:outputField value="{!Accountrecords.Name}"/>
+  </apex:pageBlockSectionItem>
+  </apex:pageBlocksection> 
+  
+  
+  <apex:pageBlockTable value="{!opprecords}" var="opp" >
+  <apex:column value="{!opp.Name}" headerValue="Opportunity Name" />
+  <apex:column value="{!opp.Description}" headerValue="Description"/>
+  <apex:column value="{!opp.Probability}" headerValue="Probability"/>
+  <apex:column value="{!opp.Price__c}" headerValue="Price"/>
+  </apex:pageBlockTable>
+  </apex:pageBlock>
+  
+</apex:page>

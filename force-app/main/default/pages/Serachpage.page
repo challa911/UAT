@@ -1,0 +1,26 @@
+<apex:page standardController="Opportunity " extensions="Productsearch">
+<apex:form id="vp">
+<apex:pageBlock >
+
+<apex:commandButton action="{!getResult}" value="Search"/>
+<apex:commandButton action="{!addProducts}" value="Select"/>
+<apex:pageBlockSection >
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="By Keyword"></apex:outputLabel>
+<apex:inputText value="{!Productname}"/>
+
+</apex:pageBlockSectionItem>
+</apex:pageBlockSection>
+
+<apex:pageBlockTable columns="3" value="{!cb}" var="p">
+<apex:column >
+<apex:inputCheckBox value="{!p.s}"/>
+</apex:column>
+<apex:column value="{!p.t.Productcode}"/>
+<apex:column value="{!p.t.Product2Id}"/>
+<apex:column value="{!p.t.UnitPrice}"/>
+
+</apex:pageBlockTable>
+</apex:pageBlock>
+ </apex:form>
+</apex:page>

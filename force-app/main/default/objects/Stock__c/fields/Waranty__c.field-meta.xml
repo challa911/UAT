@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Waranty__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>It consists of warranty of the product</description>
+    <externalId>false</externalId>
+    <label>Waranty</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

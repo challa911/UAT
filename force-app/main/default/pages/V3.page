@@ -1,0 +1,27 @@
+<apex:page standardController="Account" sidebar="false" extensions="Accountreport">
+<apex:pageBlock >
+<apex:pageBlockSection columns="1" collapsible="false" title="Account Information"   >
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="Account Name"/>
+<apex:outputField value="{!Account.Name}" />
+</apex:pageBlockSectionItem>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="SAP Customer Id"/>
+<apex:outputField value="{!Account.SAP_Customer_ID__c}"/>
+</apex:pageBlockSectionItem>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="Phone"/>
+<apex:outputField value="{!Account.Phone}"/>
+</apex:pageBlockSectionItem>
+</apex:pageBlockSection>
+
+<apex:pageBlockSection columns="1" collapsible="false" title="Contacts"  >
+<apex:pageBlockTable value="{!Account.Contacts}" var="c">
+           
+            <apex:column value="{!c.Name}"/>
+            <apex:column value="{!c.Phone}"/>
+            <apex:column value="{!c.Fax}"/>
+        </apex:pageBlockTable>
+</apex:pageBlockSection>
+</apex:pageBlock>
+</apex:page>

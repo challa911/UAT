@@ -1,0 +1,11 @@
+<apex:page controller="Accountlist">
+<apex:pageBlock title="List of Accounts and Contacts">
+<apex:pageBlockTable title="List of Accounts and Contacts" value="{!acc}" var="a" >
+<apex:column value="{!a.Name}"/>
+
+</apex:pageBlockTable>
+
+
+</apex:pageBlock>
+  
+</apex:page>

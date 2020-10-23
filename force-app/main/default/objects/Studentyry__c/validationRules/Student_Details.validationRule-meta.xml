@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Student_Details</fullName>
+    <active>true</active>
+    <errorConditionFormula>(ID_Number__c = 10482 &amp;&amp;  List__c =&quot;Abhi&quot;)</errorConditionFormula>
+    <errorDisplayField>Course__c</errorDisplayField>
+    <errorMessage>ID 10482 is Srikanth not Abhinav</errorMessage>
+</ValidationRule>
